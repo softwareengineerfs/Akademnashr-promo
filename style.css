@@ -14,6 +14,15 @@ body {
   display: flex;
   align-items: center;
 }
+.logo-link {
+  transition: opasity 0.4s ease;
+}
+.logo-link:hover {
+ opacity: 0.8;
+}
+.logo-link:active {
+ opacity: 0.6;
+}
 .sitenav-list {
 list-style-type: none;
 display: flex;
@@ -26,6 +35,13 @@ letter-spacing: 1px;
 text-transform: uppercase;
 text-decoration: none;
 color: black;
+transition: color 0.4s ease,opacity 0.4s ease;
+}
+.sitenav-link:hover {
+  color: #ff7500;
+}
+.sitenav-link:active {
+  opacity: 0.6;
 }
 .main-button {
   font-size: 13px;
@@ -33,7 +49,15 @@ color: black;
   background-color: #ff7500;
   color: #fff;
   text-decoration: none;
+  transition: opacity 0.4s ease;
 }
+.main-button:hover{
+  opacity: 0.8;
+}
+.main-button:active{
+  opacity: 0.6;
+}
+
 .hero {
 background-color: #252420;
 color: #fff;
@@ -124,6 +148,15 @@ object-fit: cover ;
   display: flex;
   align-items: center;
 }
+.site-footer-socials a {
+  color: #252420;
+}
+.site-footer-socials a:hover {
+  color: #ff7500;
+}
+.site-footer-socials a:active {
+  opacity: 0.6;
+}
 .site-footer-divider {
   height: 2px;
   background-color: rgba(37,36,32,0.5);
@@ -143,4 +176,10 @@ object-fit: cover ;
 .site-footer-links {
   width: 224px;
   line-height: 19px;
+}
+.site-footer-links a:hover {
+  color: #ff7500;
+}
+.site-footer-links a:focus {
+  opacity: 0.6;
 }
