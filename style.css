@@ -1,18 +1,33 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto","Arial",sans-serif;
   letter-spacing: 0.5px;
+  padding: 0%;
+  margin: 0%;
 }
 *:focus {
   outline: 2px solid #ff7500;
   outline-offset: 3px;
 }
-.site-header {
-  background-color: white;
+.site-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.container {
+width: 100%;
+max-width: 1120px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+.site-header {
+  background-color: white;
   border-top: 5px solid #ff7500;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -26,6 +41,9 @@ body {
 }
 .logo-link:hover {
  opacity: 0.8;
+}
+.logo-link img {
+  display: block;
 }
 .logo-link:active {
  opacity: 0.6;
@@ -77,13 +95,14 @@ transition: color 0.4s ease,opacity 0.4s ease;
 .main-button:active{
   opacity: 0.6;
 }
-
-.hero {
-background-color: #252420;
-color: #fff;
+.hero-container {
 display: flex;
 align-items: center ;
 justify-content: space-between;
+}
+.hero {
+background-color: #252420;
+color: #fff;
 padding-top: 80px;
 padding-bottom: 80px;
 }
@@ -115,6 +134,7 @@ margin-bottom: 24px;
 width: 510px;
 height: 510px;
 border-radius: 8px;
+box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
 }
 .features {
   padding-top: 210px;
@@ -162,7 +182,11 @@ letter-spacing: 0.5px;
   display: contents;
   justify-content: center;
   align-items: center;
+  margin-bottom: 32px;
 
+}
+.feature-info {
+  margin:0;
 }
 
 .feature-title {
@@ -170,14 +194,21 @@ font-size: 24px;
 line-height: 1.2;
 letter-spacing: 0.5px;
 font-family: "Roboto Condensed","Roboto","Arial",sans-serif;
+margin-top: 0%;
+margin-bottom: 12px;
 }
 .promo {
+padding-top: 120px;
+padding-bottom: 160px;
+}
+.promo-inner {
+  border-radius: 12px;
   background-color: #252420;
   color: #fff;
+  padding: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 12px;
 }
 .promo-content {
   width: 440px;
@@ -270,6 +301,12 @@ border-radius: 12px;
   list-style: none;
   margin: 0%;
   margin-right: 68px;
+}
+.site-footer-links li {
+  margin-bottom: 16px;
+}
+.site-footer-links li:last-child {
+  margin-bottom: 0%;
 }
 .site-footer-links:last-child{
   margin-right: 0 ;
