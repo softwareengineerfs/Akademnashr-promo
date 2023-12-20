@@ -1,16 +1,36 @@
-* {
-  box-sizing: border-box;
+:root {
+  --accent-color: #ff7500 ;
+
+  --text-font: "Roboto","Arial",sans-serif;
+
+  --heading-font: "Roboto Condensed","Roboto","Arial",sans-serif;
 }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto","Arial",sans-serif;
+  font-family: var(--text-font);
+  color: #000;
   letter-spacing: 0.5px;
   padding: 0%;
   margin: 0%;
 }
 *:focus {
-  outline: 2px solid #ff7500;
+  outline: 2px solid var(--accent-color);
   outline-offset: 3px;
 }
 .site-header-container {
@@ -28,7 +48,7 @@ margin-right: auto;
 }
 .site-header {
   background-color: white;
-  border-top: 5px solid #ff7500;
+  border-top: 5px solid var(--accent-color);
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -72,7 +92,7 @@ color: black;
 transition: color 0.4s ease,opacity 0.4s ease;
 }
 .sitenav-link:hover {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 .sitenav-link:active {
   opacity: 0.6;
@@ -81,7 +101,7 @@ transition: color 0.4s ease,opacity 0.4s ease;
   display: inline-block;
   font-size: 13px;
   line-height: 15px;
-  background-color: #ff7500;
+  background-color: var(--accent-color);
   color: #fff;
   text-decoration: none;
   transition: opacity 0.4s ease;
@@ -116,7 +136,7 @@ padding-bottom: 80px;
 .orange-line {
 width: 80px;
 height: 3px;
-background-color: #ff7500;
+background-color: var(--accent-color);
 letter-spacing: 0.5px;
 border: none;
 margin: 0%;
@@ -125,7 +145,7 @@ margin-bottom: 40px;
 .hero-heading {
 font-size: 40px;
 line-height: 1.2;
-font-family: "Roboto Condensed","Roboto","Arial",sans-serif;
+font-family: var(--heading-font);
 margin-top: 0%;
 margin-bottom: 24px;
 }
@@ -146,7 +166,7 @@ box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
   font-size: 72px;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  font-family: "Roboto Condensed","Roboto","Arial",sans-serif;
+  font-family: var(--heading-font);
   margin-top: 0%;
   margin-bottom: 72px;
 }
@@ -193,7 +213,7 @@ letter-spacing: 0.5px;
 font-size: 24px;
 line-height: 1.2;
 letter-spacing: 0.5px;
-font-family: "Roboto Condensed","Roboto","Arial",sans-serif;
+font-family: var(--heading-font);
 margin-top: 0%;
 margin-bottom: 12px;
 }
@@ -226,12 +246,12 @@ margin-bottom: 24px;
 .promo-heading {
 font-size: 40px;
 line-height: 48px;
-font-family: "Roboto Condensed","Roboto","Arial",sans-serif;
+font-family: var(--heading-font);
 margin-top: 0%;
 margin-bottom: 24px;
 }
 .promo-highlight {
-color: #ff7500;
+color: var(--accent-color);
 }
 .promo-img {
 width: 440px;
@@ -269,7 +289,7 @@ border-radius: 12px;
   margin-right: 0%;
 }
 .site-footer-socials a:hover {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 .site-footer-socials a:active {
   opacity: 0.6;
@@ -312,7 +332,7 @@ border-radius: 12px;
   margin-right: 0 ;
 }
 .site-footer-links a:hover {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 .site-footer-links a:active {
   opacity: 0.6;
